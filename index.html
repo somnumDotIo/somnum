@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clock</title>
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+<script></script>
+<body>
+	<div ng-app="myClock">
+	  <div ng-controller='clockTime'>
+	    <p>{{ view.time | date:'h:mm:ss a'}}</p>
+		<button type="button" ng-click='alarm = true'>Click Me!</button>
+	  </div>
+	</div>
+	
+</body>
+<script src='main.js'></script>
+</html>
