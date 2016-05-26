@@ -2,18 +2,33 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Clock</title>
+	<title>Alarm Clock</title>
+	<link href='alarmClock.css' rel='stylesheet'/>
 </head>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
-<script></script>
-<body>
-	<div ng-app="myClock">
-	  <div ng-controller='clockTime'>
-	    <p>{{ view.time | date:'h:mm:ss a'}}</p>
-		<button type="button" ng-click='alarm = true'>Click Me!</button>
-	  </div>
-	</div>
-	
-</body>
-<script src='main.js'></script>
+<script src='alarmClock.js' type="text/javascript"></script>	
+    <body>
+		<div id="Container">
+			<div id="clock">
+				<span id="hour"> </span> :
+				<span id="minute"> </span> :
+				<span id="second"> </span>
+			</div>
+			
+			<div id="Alarm">
+				Hour: <input id="aHour" type="number" min="0" max="23" onChange="numCap(this);"/>
+				&nbsp;&nbsp;
+				Minute: <input id="aMinute" type="number" min="00" max="59" onChange="numCap(this)" />
+				&nbsp;&nbsp;
+				Second: <input id="aSecond" type="number" min="00" max="59" onChange="numCap(this)" />
+				&nbsp;&nbsp;
+				&nbsp;&nbsp;
+				<input id="aSwitch" type="button" value="OFF" onclick="alarmSwitch()"/>
+			</div>
+			
+			<br>
+				<input id="turnOff" type="button" value="SHUT OFF" onclick="disableAlarm();"/>
+		</div>
+     </body>
 </html>
+
+

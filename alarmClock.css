@@ -1,0 +1,50 @@
+html, body{
+			padding:0;
+			margin:0;	
+			
+			background-color: black;
+		}
+		#Container{
+			width: 100%;
+			max-width: 90%;
+			min-width: 300px;
+			
+			margin: auto;
+			
+			background-color: gray;
+			
+			text-align:center;
+		}
+		#clock{
+			width: 100%;
+			
+			text-align:center;
+			
+			font-size: 45px;
+			font-family:Futura, "Eras Bold ITC";
+		}
+		#Alarm{
+			margin-top: 50px;
+			text-align: center;
+		}
+		
+		#turnOff{
+			background-color: rgba( 250, 10, 10, .6);
+			padding: 50px;
+			border:none; outline:none;
+			border-radius: 25%;
+			margin: auto;
+			right: 50%;
+			
+			font-weight:bolder;
+			font-size: 45px;
+			
+			display: none;
+		}
+			#turnOff:active{
+				background-color: rgba( 250, 10, 10, .9);
+				cursor: pointer;
+			}
+			#turnOff:hover{
+				cursor: pointer;
+			}
